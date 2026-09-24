@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&display=swap');
+
+:root {
+  --paper: #efe1c8;
+  --paper-light: #fdf8ef;
+  --ink: #3e2b1c;
+  --ink-soft: #5b4530;
+  --gold: #9c6b32;
+  --gold-soft: #b8935a;
+  --line: #ddc9a3;
+  --danger: #a83b44;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Cormorant Garamond', serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--ink);
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+@media (max-width: 560px) {
+  header {
+    padding-top: 72px !important;
+  }
+}
+
+/* حركات بسيطة لأيقونات الشريط العلوي والفوتر */
+.nav-icon {
+  transition: transform 220ms ease, color 220ms ease;
+}
+.nav-icon:hover {
+  transform: translateY(-2px);
+  color: var(--gold);
+}
+
+.insta-icon {
+  transition: transform 250ms ease;
+}
+.insta-icon:hover {
+  transform: scale(1.15) rotate(-4deg);
+}
